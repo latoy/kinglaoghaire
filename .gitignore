@@ -1,6 +1,5 @@
 # ignore Mac system files
 .DS_Store
-assets/.DS_Store
 
 # ignore node dependency directories
 node_modules/
@@ -9,3 +8,4 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+*.env
