@@ -1,7 +1,16 @@
 /* fonts go here */
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
 /* base styles */
+
+:root {
+  --primary-color: #45A346;
+  --secondary-color: ;
+  --text-color: #333;
+  --light-color: ;
+  --dark-color: #112D15;
+}
 
 * {
   box-sizing: border-box;
@@ -14,10 +23,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  font-family: 'Merriweather' 'Georgia' serif;
+  font-family: 'Merriweather', Georgia, serif;
+  font-size: 87.5%;
   font-weight: 300;
   line-height: 2;
-  color: #000;
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4 {
@@ -28,4 +38,66 @@ h1, h2, h3, h4 {
 
 p {
   margin: 2rem 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+
+a:hover, a:focus {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Navigation Top */
+
+.navbar {
+  margin: 2rem 0;
+}
+
+.navbar .grid {
+  display: grid;
+  grid-template-rows: 2;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul a {
+  border: none;
+}
+
+.navbar ul a:hover,
+.navbar ul a:focus {
+  border-bottom: 4px solid var(--primary-color);
+  padding-bottom: .5rem;
+}
+
+.main-menu li {
+  padding-right: 1.5rem;
+}
+
+.logo {
+  border-bottom: none;
+  text-align: center;
+}
+.logo-top {
+  max-width: 300px;
 }
